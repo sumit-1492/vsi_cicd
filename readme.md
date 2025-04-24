@@ -48,3 +48,21 @@ oneliner updates for readme
 ```bash
 git add . && git commit -m "update Readme.md"
 ```
+
+dvc commands to run all the stages after updating dvc.yaml
+
+```bash
+dvc repro
+```
+
+to check all the metrcis
+
+```bash
+dvc metrics show
+```
+
+to check the metric scores with previous 
+
+```bash
+dvc metrics diff
+```
