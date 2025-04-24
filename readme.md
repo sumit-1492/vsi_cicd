@@ -43,9 +43,7 @@ git commit -m "first commit"
 git push -u origin main
 ```
 
-```bash
 oneliner updates for readme
-```
 
 ```bash
 git add . && git commit -m "update Readme.md"
