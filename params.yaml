@@ -17,9 +17,11 @@ split_data:
 estimators:
   LogisticRegression:
     params:
-      # alpha: 0.88
-      # l1_ratio: 0.89
+      penalty: l2
       solver: lbfgs
       l1_ratio: 0.4
+reports:
+  params: report/params.json
+  evaluation: report/evaluation_metrices.json
 
 model_dir: saved_models

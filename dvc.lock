@@ -40,3 +40,35 @@ stages:
       hash: md5
       md5: 0408df0896a1388a56cf3d274344f7ec
       size: 9869389
+  train_and_evaluate:
+    cmd: python src/train_and_evaluate.py --config=params.yaml
+    deps:
+    - path: data/processed/test_email_phishing_data.csv
+      hash: md5
+      md5: 261a9c8de883006deb1878920412a0e9
+      size: 2467640
+    - path: data/processed/train_email_phishing_data.csv
+      hash: md5
+      md5: 0408df0896a1388a56cf3d274344f7ec
+      size: 9869389
+    - path: src/train_and_evaluate.py
+      hash: md5
+      md5: 41535905ed391beda1d9ea3d6936c9bf
+      size: 2794
+    params:
+      params.yaml:
+        estimators.LogisticRegression.params.l1_ratio: 0.4
+        estimators.LogisticRegression.params.solver: lbfgs
+    outs:
+    - path: report/evaluation_metrices.json
+      hash: md5
+      md5: 35d88d0c673464570b2149f0c9286e15
+      size: 101
+    - path: report/params.json
+      hash: md5
+      md5: 6f47d1b17a84c1a00572507e3931620a
+      size: 71
+    - path: saved_models/model.joblib
+      hash: md5
+      md5: 5527db5ae7247993576cd3d5661072cf
+      size: 1407

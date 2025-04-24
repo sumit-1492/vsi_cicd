@@ -1,0 +1,5 @@
+{
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "l1_ratio": 0.4
+}
