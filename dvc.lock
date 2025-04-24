@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/email_phishing_data.csv
+      hash: md5
+      md5: ab5fe8dc4ad58fa2af9e4fbecb43b6e6
+      size: 11812045
+    - path: src/get_data.py
+      hash: md5
+      md5: 3b64e6e08732b3e38d58797728947474
+      size: 624
+    - path: src/load_data.py
+      hash: md5
+      md5: 30083f89d67ed40cee9157006fd2dd11
+      size: 520
+    outs:
+    - path: data/raw/email_phishing_data.csv
+      hash: md5
+      md5: 820852eaad79359c17e929903a4c1822
+      size: 12336892
