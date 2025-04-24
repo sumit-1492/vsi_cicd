@@ -19,18 +19,34 @@ install the requirements
 pip install -r requirements.txt
 ```
 
+```bash
 git init
+```
 
+```bash
 dvc init
+```
 
+```bash
 dvc add data_given/email_phishing_data.csv
+```
 
+```bash
 git add .
+```
 
+```bash
 git commit -m "first commit"
+```
 
+```bash
 git push -u origin main
+```
 
+```bash
 oneliner updates for readme
+```
 
+```bash
 git add . && git commit -m "update Readme.md"
+```
