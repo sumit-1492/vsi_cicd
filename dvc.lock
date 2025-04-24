@@ -20,3 +20,23 @@ stages:
       hash: md5
       md5: 820852eaad79359c17e929903a4c1822
       size: 12336892
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data_given/email_phishing_data.csv
+      hash: md5
+      md5: ab5fe8dc4ad58fa2af9e4fbecb43b6e6
+      size: 11812045
+    - path: src/split_data.py
+      hash: md5
+      md5: d9bb7294c5f37d6c868c4a26ff9dc5b1
+      size: 1036
+    outs:
+    - path: data/processed/test_email_phishing_data.csv
+      hash: md5
+      md5: 261a9c8de883006deb1878920412a0e9
+      size: 2467640
+    - path: data/processed/train_email_phishing_data.csv
+      hash: md5
+      md5: 0408df0896a1388a56cf3d274344f7ec
+      size: 9869389
