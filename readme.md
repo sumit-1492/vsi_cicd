@@ -29,8 +29,7 @@ git add .
 
 git commit -m "first commit"
 
-git remote add origin https://github.com/sumit-1492/vsi_cicd.git
-
-git branch -M main
-
 git push -u origin main
+
+oneliner updates for readme
+git add . && git commit -m "update Readme.md"
