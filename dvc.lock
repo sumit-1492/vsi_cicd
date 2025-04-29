@@ -57,7 +57,7 @@ stages:
       size: 2794
     params:
       params.yaml:
-        estimators.LogisticRegression.params.l1_ratio: 0.4
+        estimators.LogisticRegression.params.l1_ratio: 0.5
         estimators.LogisticRegression.params.solver: lbfgs
     outs:
     - path: report/evaluation_metrices.json
@@ -66,9 +66,9 @@ stages:
       size: 101
     - path: report/params.json
       hash: md5
-      md5: 6f47d1b17a84c1a00572507e3931620a
+      md5: 96cf9d6c666e0927e011cfc71eae04ae
       size: 71
     - path: saved_models/model.joblib
       hash: md5
-      md5: 5527db5ae7247993576cd3d5661072cf
+      md5: dc557f36f55f52e1c9d451b87dbdec2a
       size: 1407

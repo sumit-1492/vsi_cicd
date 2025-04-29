@@ -46,7 +46,7 @@ git push -u origin main
 oneliner updates for readme
 
 ```bash
-git add . && git commit -m "update Readme.md"
+git add . && git commit -m "update Readme.md" && git push origin main
 ```
 
 dvc commands to run all the stages after updating dvc.yaml
@@ -66,3 +66,37 @@ to check the metric scores with previous
 ```bash
 dvc metrics diff
 ```
+
+tox(for automate the testing)
+
+create tox.ini
+
+```bash
+touch tox.ini
+```
+
+to run the tox command
+
+```bash
+tox
+```
+
+if requirements got updated, tox need to be reloaded
+
+```bash
+tox -r
+```
+
+setup commands
+
+```bash
+pip install -e.
+```
+
+build your own packages commands
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
+
