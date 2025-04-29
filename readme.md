@@ -90,7 +90,7 @@ tox -r
 setup commands
 
 ```bash
-pip install -e.
+pip install -e .
 ```
 
 build your own packages commands
