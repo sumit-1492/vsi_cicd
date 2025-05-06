@@ -1,4 +1,5 @@
 setup.py
+prediction_service/__init__.py
 src/__init__.py
 src/get_data.py
 src/load_data.py

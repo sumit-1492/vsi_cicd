@@ -21,6 +21,9 @@ estimators:
       solver: lbfgs
       #l1_ratio: 0.4
       l1_ratio: 0.5
+
+webapp_model_dir: prediction_service/model/model.joblib
+
 reports:
   params: report/params.json
   evaluation: report/evaluation_metrices.json
